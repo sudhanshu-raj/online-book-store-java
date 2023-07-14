@@ -1,0 +1,274 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+*:focus {
+	outline: none;
+}
+
+.left {
+	width: 70%;
+	float: left;
+	clear: both;
+}
+
+.right {
+	width: 30%;
+	float: right;
+	margin-bottom: 25px;
+}
+
+body {
+	background-color:#7431F9;
+	height: auto;
+	min-height: calc(100vh);
+	font-family: font;
+	font-weight: 500;
+}
+
+#wrapper {
+	height: 100vh;
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+#container {
+	background: white;
+	height: 440px;
+	min-width: 600px;
+	width: 600px;
+	z-index: 1;
+	-webkit-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2);
+	box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2);
+	 
+	
+}
+
+#left-col {
+	width: 40%;
+	min-width: 240px;
+	height: 100%;
+	float: left;
+	background: #34495e;
+	 overflow: auto;
+}
+
+#left-col-cont {
+	margin: 20px 25px;
+	color: white;
+}
+
+#left-col-cont h2 {
+	margin: 25px 0 0 0;
+}
+
+#left-col-cont div.item {
+	margin: 30px 0;
+	clear: both;
+	padding:5px;
+	padding-top:5px;
+	
+}
+
+#left-col-cont div.item .img-col {
+	width: 30%;
+	float: left;
+}
+
+#left-col-cont div.item .img-col img {
+	width: 100%;
+	max-height: 100px;
+}
+
+#left-col-cont div.item .meta-col {
+	width: 70%;
+	float: right;
+}
+
+#left-col-cont div.item .meta-col h3 {
+	font-size: 0.7em;
+	margin: 10px 0 0 5px;
+}
+
+#left-col-cont div.item .meta-col p {
+	font-size: 0.9em;
+	margin: 5px 0 0 5px;
+	opacity: .5;
+}
+
+#left-col-cont p#total {
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 0.7em;
+	opacity: .5;
+	margin: 115px 0 5px 0;
+}
+
+#left-col-cont h4#total-price {
+	text-align: left;
+	font-size: 2em;
+	margin: 0;
+}
+
+#left-col-cont h4#total-price span {
+	color: #1c2834;
+}
+
+#right-col {
+	width: calc(60% - 50px);
+	min-width: 310px;
+	height: 100%;
+	margin: 20px 25px;
+	float: right;
+}
+
+#right-col h2 {
+	float: left;
+	margin: 6px 0 0 0;
+}
+
+#right-col div#logotype {
+	float: right;
+	margin: 4px 0 0 0;
+}
+
+#right-col div#logotype img {
+	width: 60px;
+	height: auto;
+}
+
+#right-col div#logotype img#visa {
+	margin-top: -10px;
+}
+
+form {
+	margin: 80px auto 0;
+	width: 100%;
+}
+
+form label {
+	display: block;
+	font-family: font;
+	font-size: 0.7em;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 14px 0 4px;
+}
+
+form label#cvc-label i {
+	cursor: pointer;
+	margin-left: 3px;
+}
+
+form input {
+	display: block;
+	padding: 6px 8px;
+	border: 1px solid lightgrey;
+	border-radius: 2px;
+	font-size: 0.9em;
+}
+
+form input:focus {
+	border-color: primary;
+}
+
+form input::-webkit-input-placeholder {
+	opacity: .5;
+}
+
+form input::-moz-placeholder {
+	opacity: .5;
+}
+
+form input#cardholder {
+	width: calc(100% - 18px);
+}
+
+form input#cvc {
+	width: calc(100% - 18px);
+}
+
+form select {
+	border: 1px solid lightgrey;
+	border-radius: 2px;
+	background: none;
+	width: 90px;
+	font-weight: 500;
+	font-size: 0.9em;
+	padding: 6px 8px;
+	color: rgba(0, 0, 0, .2);
+	-webkit-appearance: none;
+	-moz-appearance:    none;
+	appearance:         none;
+}
+
+form button {
+	display: block;
+	width: 100%;
+	border: none;
+	border-radius: 2px;
+	padding: 8px 0;
+	font-size: 0.8em;
+}
+
+form button#purchase {
+	background-color: #7431F9;
+	color: white;
+	margin: 0 0 8px;
+	font-size: 0.9em;
+}
+
+form button#paypal {
+	background: none;
+	border: 1px solid lightgrey;
+}
+
+form button#paypal:hover {
+	background: #003087;
+	border-color: #003087;
+	color: white;
+}
+
+form button#paypal i {
+	color: #003087;
+}
+
+form p#support {
+	font-size: 0.7em;
+	text-align: center;
+	color: rgba(0, 0, 0, .5);
+}
+
+form p#support a {
+	margin-top:20px;
+	text-decoration: none;
+	color: inherit;
+	padding: 0 1px 2px 1px;
+	border-bottom: 1px solid rgba(0, 0, 0, .5);
+}
+
+form p#support a:hover {
+	padding-bottom: 3px;
+}
+.back{
+	
+	text-align:center;
+}
+#dailyui {
+	position: fixed;
+	font-size: 15em;
+	font-weight: 700;
+	margin: 0 0 -55px 0;
+	padding: 0;
+	right: 0;
+	bottom: 0;
+	color: rgba(0, 0, 0, .3);
+	z-index: 0;
+	text-align: right;
+	font-family: 'proxima-nova', 'Lato', sans-serif;
+}

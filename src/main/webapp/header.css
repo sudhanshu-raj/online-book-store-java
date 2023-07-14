@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #7431F9;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.left {
+    display: flex;
+    margin-left: 30px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 650px;
+}
+
+.logo img {
+    position: relative;
+    width: 250px;
+    height: 50px;
+
+
+}
+.searchBar{
+    position: relative;
+    
+}
+.searchBar input{
+    width: 300px;
+    height: 30px;
+    border: 2px solid white;
+    outline: none;
+    padding-left: 12px;
+    border-width: 2px 0px 2px 2px;
+    background-color: transparent;
+    
+}
+.searchBar input::placeholder{
+    color: white;
+    letter-spacing: 1.8px;
+}
+.searchBar input:focus,
+.searchBar input:active,
+.searchBar input:hover{
+    color: white;
+   
+}
+.btn{
+    background-color: #ffffff;
+    position: absolute; 
+    height: 100%;
+    width: 40px;
+    outline: none;
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.5s linear;
+   
+}
+.btn:focus,
+.btn:hover,
+.btn:active{
+   border: solid #7431F9;
+   border-width:0px 7px 0px 0px ;
+}
+
+.right{
+    display: flex;
+
+}
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: #7431F9;
+}

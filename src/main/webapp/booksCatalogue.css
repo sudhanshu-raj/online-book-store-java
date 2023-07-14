@@ -1,0 +1,117 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.content {
+  text-align: center;
+  padding: 40px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 200px;
+  height: 300px;
+  margin: 0 auto 20px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+.add-to-cart-button{
+ font-size:15px;
+  font-family:Arial;
+  width:140px;
+  height:50px;
+  border-width:1px;
+  color:#ffffff;
+  border-color:#057fd0;
+  font-weight:bold;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+  box-shadow: 0px 1px 0px 0px #f0f7fa;
+  text-shadow: 0px -1px 0px #5b6178;
+  background:linear-gradient(4deg, rgba(65,32,168,0.9501925770308123) 0%, rgba(75,75,224,1) 45%, rgba(0,212,255,1) 100%);
+  
+  /*linear-gradient(#33bdef, #019ad2)*/
+}
+
+
+.add-to-cart-button:hover{
+	  background:linear-gradient(266deg, rgba(60,57,101,1) 0%, rgba(70,70,186,1) 53%, rgba(0,212,255,1) 100%);
+	   background-position: right center;
+	   width:138px;
+  height:48px;
+}
+
+         
+         .btn-grad {
+            background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+                 
+
+
