@@ -55,7 +55,7 @@
 					alt="Product 1" class="product-image">
 				<div class="product-details">
 					<h2 class="product-title"><%=product.getName()%></h2>
-					<p class="product-price"><%=product.getPrice()%></p>
+					<p class="product-price">Rs <%=product.getPrice()%></p>
 					<p class="product-description"><%=product.getCategory()%></p>
 				</div>
 				<form action="add-to-cart">

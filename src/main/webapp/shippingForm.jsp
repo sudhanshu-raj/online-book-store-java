@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Shipping Details</title>
 <link rel="stylesheet" type="text/css" href="shippingForm.css">
 </head>
 <body>
@@ -36,6 +36,12 @@ response.setHeader("Cache-control", "no-cache,no-store,must-revalidated");
 		<h1>Shipping</h1>
 		<p>Please enter your shipping details.</p>
 		<hr />
+		<% if(session.getAttribute("shippingError")!=null){
+			%>
+			<p style="color:red;">${shippingError} </p>
+		<%}
+		session.removeAttribute("shippingError");
+		%>
 		 <form action="addShipping">
 		<div class="form">
 
