@@ -32,21 +32,13 @@ public class addShipping extends HttpServlet {
 	
 			session.setAttribute("shippingError","Please fill  correct data in all fields");
 			resp.sendRedirect("shippingForm.jsp");
-//			out.println(fullname);
-//			out.println(contact);
-//			out.println(address);
-//			out.println(zipcode);
+
 		}
 		else {
 			Shipping shipping=new Shipping(fullname, contact, address, country, zipcode, city, state);
 		obj.addShippingDetails(shipping);
 		resp.sendRedirect("orders.jsp");
 			
-//			out.println(fullname);
-//			out.println(contact);
-//			out.println(address);
-//			out.println(zipcode);
-//			out.println("All is null");
 		}
 		
 		
